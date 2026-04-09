@@ -1,3 +1,9 @@
-<Solution>
-  <Project Path="PA(Progressão Aritmética).csproj" />
-</Solution>
+Console.OutputEncoding = System.Text.Encoding.UTF8;
+Console.WriteLine("Até que número a PA deve ir?");
+int f = int.Parse(Console.ReadLine());
+Console.WriteLine("Qual deve ser a razão?");
+int w = int.Parse(Console.ReadLine());
+for (int i = 0; i <= f; i = i + w)
+{
+    Console.Write($"{i}➡️");
+}
